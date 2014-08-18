@@ -1,0 +1,59 @@
+$flexLayoutPadding: 0 $horizontalBase;
+
+#masthead {
+	background:#252525;
+	color:#fff;
+	position:relative;
+
+	.site-branding {
+		padding: $flexLayoutPadding;
+		h1,h2 {
+			margin-top:0;
+			margin-bottom:0;
+		}
+		h1 {
+			float:left;
+			margin-left:$lineheight*2 + 1rem; // Making room for menu-toggle
+		}
+		h2 {
+			float:right;
+			clear:none;
+		}
+		a {
+			color:white;
+			text-decoration:none;
+		}
+	}
+}
+
+.content-area {
+	margin:0 10% 0 5%;
+}
+@media screen and (min-width: 800px) {
+	.content-area {
+		margin:0 20% 0 10%;
+
+		.site-main {
+			max-width:800px;
+			margin:auto;
+		}
+	}
+}
+
+#secondary {
+	display:flex;
+	flex-wrap:wrap;
+	padding: $flexLayoutPadding;
+
+	background:#252525;
+	color:white;
+}
+
+#colophon {
+	padding: $flexLayoutPadding;
+	text-align:center;
+
+	.site-info {
+		margin:1.7rem 0;
+	}
+}

@@ -1,0 +1,239 @@
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+// Fonts
+@import 'font-gentium-book-basic';
+@import 'font-overlock-sc';
+
+// Variables
+$lineheight: 3.4rem;
+$horizontalBase: $lineheight*3/2;
+$borderRadius: 3px;
+$book: "Gentium Book Basic", "Georgia", serif;
+$sans: "Overlock SC", sans-serif;
+
+body,
+button,
+select {
+	color: #404040;
+	font-family: $sans; 
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: $lineheight;
+}
+input,
+textarea,
+.entry-content,
+.entry-summary,
+.comment-content {
+	font-family: $book;
+}
+.site-main article {
+	font-size: 19px;
+	font-size: 1.9rem;
+
+	.entry-title,
+	.entry-content > p:first-of-type:first-letter {
+		background-color: #252525;
+		color: white;
+		border-radius: $borderRadius;
+		font-weight: normal;
+	}
+	.entry-title {
+		padding:$lineheight*1.5 $horizontalBase/2 $lineheight*0.5;
+
+		a {
+			color:inherit;
+			text-decoration:none;
+		}
+	}
+	.entry-content > p:first-of-type:first-letter {
+		font-size: 10.95rem;
+		vertical-align: text-top;
+		line-height: $lineheight*3;
+		float: left;
+		margin-right: 0.0625em;
+		padding: 0 0.8rem;
+	}
+}
+// Firefox hack
+@-moz-document url-prefix() {
+	.site-main article .entry-content > p:first-of-type:first-letter {
+		padding: 1.1rem 0.8rem;
+	}
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $sans;
+	margin-top: $lineheight;
+	clear: both;
+	-ms-word-wrap:break-word;
+	word-wrap:break-word;
+}
+h1 {
+	font-size:3.8rem;
+	line-height:$lineheight*2;
+	margin-bottom:$lineheight;
+}
+h2 {
+	font-size:2.9rem;
+	line-height:$lineheight*2;
+	margin-top:$lineheight*3/2;
+	margin-bottom:$lineheight/2;
+}
+h3 {
+	font-size:2.6rem;
+}
+h4 {
+	font-size:2.4rem;
+}
+h5 {
+	font-size:2.1rem;
+}
+
+dt {
+	font-family:$sans;
+}
+dd {
+	font-family:$book;
+}
+
+p {
+	margin-bottom: $lineheight;
+}
+b, strong {
+	font-weight: bold;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin: 0 0 $lineheight;
+	padding: $lineheight $horizontalBase 0.1px;
+	font-size:1.6rem;
+	line-height: $lineheight/2;
+	border-radius: $borderRadius;
+
+	background:#eee;
+
+	cite {
+		display:block;
+		clear:both;
+		text-align:right;
+		margin-top: $lineheight/2;
+	}
+}
+@media screen and (min-width:500px) {
+	blockquote {
+		margin: 0 $horizontalBase $lineheight;
+	}
+}
+q {
+	font-style:italic;
+	font-size:2.0rem;
+}
+address {
+	margin: 0 0 $lineheight;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	//font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 17px;
+	font-size: 1.7rem;
+	line-height: $lineheight*3/4;
+	margin: $lineheight/2 0;
+	max-width: 100%;
+	overflow: auto;
+	padding: $lineheight;
+	border-radius: $borderRadius;
+}
+code, kbd, tt, var {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	//font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size:1.7rem;
+	padding:$lineheight/4;
+	background:#eee;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+mark, ins {
+	background: #fff99f;
+	padding:$lineheight/4;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+big {
+	font-size: 125%;
+}
+small,
+.wp-caption-text {
+	font-size:15px;
+	font-size:1.5rem;
+	line-height: $lineheight/2;
+}
+
+// Turning up font sizes when we reach a reasonable screen size
+@media screen and (min-width:500px) {
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		font-size:19px;
+		font-size:1.9rem;
+	}
+
+	.site-main article {
+		font-size: 22px;
+		font-size: 2.2rem;
+	}
+	h1 {
+		font-size:4.8rem;
+		line-height:6.8rem;
+	}
+	h2 {
+		font-size:3.9rem;
+		line-height:6.8rem;
+	}
+	h3 {
+		font-size:2.9rem;
+	}
+	h4 {
+		font-size:2.6rem;
+	}
+	h5 {
+		font-size:2.4rem;
+	}
+	blockquote {
+		font-size:1.9rem;
+		line-height: $lineheight;
+	}
+}
+
+@media screen and (min-width:950px) {
+	.site-main article {
+		.entry-content > p:first-of-type {
+			margin-top:$lineheight;
+
+			&:first-letter {
+				margin-top:-$lineheight;
+			}
+		}
+	}
+
+}

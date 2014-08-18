@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+.widget {
+	min-width:225px;
+	margin: $lineheight/2 $horizontalBase/2;
+	flex:1;
+
+	h1 {
+		@extend h3;
+	}
+
+	> ul {
+		margin-left:0;
+		list-style-position:inside;
+	}
+}
+.widget:first-child {
+	margin-left:0;
+}
+.widget:last-child {
+	margin-right:0;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}

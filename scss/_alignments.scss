@@ -1,0 +1,115 @@
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	clear: left;
+	margin-right: $horizontalBase/2;
+}
+.alignright {
+	display: inline;
+	float: right;
+	clear: right;
+	margin-left: $horizontalBase/2;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+img.alignleft,
+img.alignright {
+	margin-bottom:$lineheight/2;
+}
+
+@media screen and (min-width:500px) {
+	blockquote.left {
+		display: inline;
+		float: left;
+		clear: left;
+		margin-right: $horizontalBase/2;
+	}
+	blockquote.right {
+		display: inline;
+		float: right;
+		clear: right;
+		margin-left: $horizontalBase/2;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.site-main article .entry-title,
+	.wp-caption.alignnone,
+	.alignleft,
+	blockquote.left {
+		margin-left:-7rem;
+	}
+	.site-main article .entry-title {
+		padding-left:7rem;
+	}
+	.site-main article .entry-title,
+	.wp-caption.alignnone,
+	.alignright,
+	blockquote.right,
+	body.single .site-main .entry-title,
+	body.page .site-main .entry-title {
+		margin-right:-9rem;
+	}
+
+	.wp-caption.alignnone {
+		width:auto !important;
+		max-width:none !important;
+
+		img {
+			width:100%;
+		}
+	}
+
+	blockquote.alignleft,
+	blockquote.alignright,
+	blockquote.left,
+	blockquote.right {
+		max-width:300px;
+	}
+
+}
+@media screen and (min-width: 1250px) {
+	.site-main article .entry-title,
+	.wp-caption.alignnone,
+	.alignleft,
+	blockquote.left {
+		margin-left:-14rem;
+	}
+	.site-main article .entry-title {
+		padding-left:14rem;
+	}
+	.site-main article .entry-title,
+	.wp-caption.alignnone,
+	.alignright,
+	blockquote.right,
+	body.single .site-main .entry-title,
+	body.page .site-main .entry-title {
+		margin-right:-18rem;
+	}
+}
+@media screen and (min-width: 1380px) {
+	.site-main article .entry-title,
+	.wp-caption.alignnone,
+	.alignleft,
+	blockquote.left {
+		margin-left:-20rem;
+	}
+	.site-main article .entry-title {
+		padding-left:20rem;
+	}
+	.site-main article .entry-title,
+	.wp-caption.alignnone,
+	.alignright,
+	blockquote.right,
+	body.single .site-main .entry-title,
+	body.page .site-main .entry-title {
+		margin-right:-26rem;
+	}
+}
