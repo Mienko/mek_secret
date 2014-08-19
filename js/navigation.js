@@ -39,7 +39,7 @@
 
 jQuery( document ).ready(function( $ ) {
 	$(document).on('scroll', function(){
-		if ( $('.site-main article:first-child').offset().top + $('.site-main article:first-child .entry-title').height() < $(document).scrollTop() ) {
+		if ( $('.site-main article:first-child .entry-title').offset().top + $('.site-main article:first-child .entry-title').height() < $(document).scrollTop() ) {
 			$('#masthead').addClass('unfocused');
 			if ($('body.single').length && ! $('#masthead .site-title .entry-title').length ) {
 				$('#masthead .site-title').append('<span class="entry-title">: ' + $('.site-main article:first-child .entry-title').html() + '</span>');

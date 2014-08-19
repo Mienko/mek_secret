@@ -1,5 +1,11 @@
 $flexLayoutPadding: 0 $horizontalBase;
 
+#page {
+	position:absolute; // To fix correct positioning of #masthead with and without WP admin bar
+}
+#content {
+	margin-top:$lineheight*2; // Make room for #masthead
+}
 #masthead {
 	background:#252525;
 	color:#fff;
