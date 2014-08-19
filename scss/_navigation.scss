@@ -33,6 +33,7 @@ a:active {
 	.menu-toggle {
 		@extend h1;
 
+		display: block;
 		margin:0;
 		text-shadow:none;
 		box-shadow:none;
@@ -52,19 +53,27 @@ a:active {
 	}
 	ul.nav-menu {
 		list-style:none;
-		display:flex;
 		justify-content:space-between;
+		position:relative;
+		left:-100%;
 
 		margin:0;
 		padding:$flexLayoutPadding;
 
 		background:#eee;
 
+		transition:all 0.5s;
+
 		li {
 			position:relative;
+			border-bottom:1px solid white;
 
 			a {
 				text-decoration: none;
+			}
+
+			&:last-child {
+				border-bottom:0 none;
 			}
 		}
 
@@ -110,55 +119,11 @@ a:active {
 		}
 		
 	}
-}
-/*
-.main-navigation ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-.main-navigation ul ul li {
-}
-.main-navigation li:hover > a {
-}
-.main-navigation ul ul:hover > a {
-}
-.main-navigation ul ul a:hover {
-}
-.main-navigation ul li:hover > ul {
-	left: auto;
-}
-.main-navigation ul ul li:hover > ul {
-	left: 100%;
-}
-.main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
-}
-*/
-
-/* Small menu */
-/*
-.menu-toggle {
-	display: none;
-}
-@media screen and (max-width: 600px) {
-*/
-	.main-navigation ul.nav-menu {
-		display: none;
-
-		li {
-			border-bottom:1px solid white;
-		}
+	&.toggled ul.nav-menu {
+		left:0;
 	}
-	.menu-toggle,
-	.main-navigation.toggled ul.nav-menu {
-		display: block;
-	}
-//}
+}
+
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -175,19 +140,10 @@ a:active {
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
-/*
-	float: left;
-	width: 50%;
-*/
 	@extend .alignleft;
 }
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
-/*
-	float: right;
-	text-align: right;
-	width: 50%;
-*/
 	@extend .alignright;
 }
