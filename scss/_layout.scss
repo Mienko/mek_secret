@@ -3,25 +3,47 @@ $flexLayoutPadding: 0 $horizontalBase;
 #masthead {
 	background:#252525;
 	color:#fff;
-	position:relative;
+	position:fixed;
+	transition:all 0.5s;
+	height:$lineheight*2;
+	width:100%;
 
 	.site-branding {
 		padding: $flexLayoutPadding;
-		h1,h2 {
+
+		.site-title,
+		.site-description {
 			margin-top:0;
 			margin-bottom:0;
+			transition:all 0.5s;
 		}
-		h1 {
+		.site-title {
 			float:left;
 			margin-left:$lineheight*2 + 1rem; // Making room for menu-toggle
 		}
-		h2 {
+		.site-description {
 			float:right;
 			clear:none;
 		}
 		a {
 			color:white;
 			text-decoration:none;
+		}
+	}
+	&.unfocused {
+		height:$lineheight;
+
+		.site-title,
+		.site-description,
+		.menu-toggle {
+			transform:scale(0.5);
+			transform-origin:left top;
+		}
+		.site-description {
+			transform-origin:right top;
+		}
+		.site-title {
+			margin-left:$lineheight + 1rem;
 		}
 	}
 }

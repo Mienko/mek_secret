@@ -1,7 +1,7 @@
 /**
  * navigation.js
  *
- * Handles toggling the navigation menu for small screens.
+ * Handles toggling the navigation menu.
  */
 ( function() {
 	var container, button, menu;
@@ -16,9 +16,13 @@
 
 	menu = container.getElementsByTagName( 'ul' )[0];
 
+	masthead = document.getElementById( 'masthead' );
+	siteTitle = masthead.getElementsByTagName( 'h1' )[0];
+
 	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
 		button.style.display = 'none';
+		siteTitle.style.margin = '0';
 		return;
 	}
 
@@ -32,3 +36,13 @@
 			container.className += ' toggled';
 	};
 } )();
+
+jQuery( document ).ready(function( $ ) {
+	$(document).on('scroll', function(){
+		if ( 80 < $(document).scrollTop() ) {
+			$('#masthead').addClass('unfocused');
+		} else {
+			$('#masthead').removeClass('unfocused');
+		}
+	});
+});

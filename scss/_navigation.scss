@@ -29,7 +29,14 @@ a:active {
 		position:absolute;
 		width:50rem;
 		max-width:100%;
+		top:100%;
+		left:-100%;
+		transition:all 0.5s;
 	}
+	&.toggled > * {
+		left:0;
+	}
+
 	.menu-toggle {
 		@extend h1;
 
@@ -55,7 +62,6 @@ a:active {
 		list-style:none;
 		justify-content:space-between;
 		position:relative;
-		left:-100%;
 
 		margin:0;
 		padding:$flexLayoutPadding;
@@ -118,9 +124,6 @@ a:active {
 			}
 		}
 		
-	}
-	&.toggled ul.nav-menu {
-		left:0;
 	}
 }
 
