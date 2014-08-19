@@ -24,6 +24,8 @@ $flexLayoutPadding: 0 $horizontalBase;
 		.site-description {
 			float:right;
 			clear:none;
+			line-height:$lineheight*1.75;
+			margin-top:$lineheight*0.25;
 		}
 		a {
 			color:white;
@@ -41,6 +43,8 @@ $flexLayoutPadding: 0 $horizontalBase;
 		}
 		.site-description {
 			transform-origin:right top;
+			line-height:$lineheight*1.875;
+			margin-top:$lineheight*0.125;
 		}
 		.site-title {
 			margin-left:$lineheight + 1rem;
