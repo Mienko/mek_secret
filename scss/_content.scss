@@ -10,12 +10,19 @@
 	margin: 0 0 $lineheight;
 }
 .byline,
-.updated {
+.updated,
+.author {
 	display: none;
 }
-.single .byline,
-.group-blog .byline {
-	display: inline;
+.single.group-blog {
+	.byline,
+	.author {
+		display: inline;
+	}
+	.site-main article .entry-content > p:first-of-type:first-letter {
+		line-height:$lineheight*3;
+		font-size:10.95rem;
+	}
 }
 .page-content,
 .entry-content,
@@ -45,6 +52,37 @@
 	}
 	a {
 		color:inherit;
+	}
+}
+.site-main article {
+	.entry-title,
+	.entry-content > p:first-of-type:first-letter {
+		background-color: #252525;
+		color: white;
+		border-radius: $borderRadius;
+		font-weight: normal;
+	}
+	.entry-title {
+		padding:$lineheight*1.5 $horizontalBase/2 $lineheight*0.5;
+
+		a {
+			color:inherit;
+			text-decoration:none;
+		}
+	}
+	.entry-content > p:first-of-type:first-letter {
+		font-size: 7.95rem;
+		vertical-align: text-top;
+		line-height: $lineheight*2;
+		float: left;
+		margin-right: 0.0625em;
+		padding: 0 0.8rem;
+	}
+}
+// Firefox hack
+@-moz-document url-prefix() {
+	.site-main article .entry-content > p:first-of-type:first-letter {
+		padding: 1.1rem 0.8rem;
 	}
 }
 @media screen and (max-width:569px) {
