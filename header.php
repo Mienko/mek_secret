@@ -29,7 +29,7 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( '&#9776; Primary Menu', 'mek_secret' ); ?></button>
+			<button class="menu-toggle" title="<?php _e( 'Primary Menu', 'mek_secret' ); ?>">&#9776;</button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

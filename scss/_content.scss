@@ -61,6 +61,7 @@
 		color: white;
 		border-radius: $borderRadius;
 		font-weight: normal;
+		text-transform:uppercase;
 	}
 	.entry-title {
 		padding:$lineheight*1.5 $horizontalBase/2 $lineheight*0.5;
@@ -79,9 +80,13 @@
 		padding: 0 0.8rem;
 	}
 }
+
 // Firefox hack
 @-moz-document url-prefix() {
 	.site-main article .entry-content > p:first-of-type:first-letter {
+		padding: 0.8rem;
+	}
+	.single.group-blog .site-main article .entry-content > p:first-of-type:first-letter {
 		padding: 1.1rem 0.8rem;
 	}
 }
@@ -121,7 +126,7 @@
 
 		dt {
 			float:left;
-			clear:left;
+			clear:both;
 		}
 		dd {
 			float:right;

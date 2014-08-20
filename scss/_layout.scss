@@ -2,6 +2,7 @@ $flexLayoutPadding: 0 $horizontalBase;
 
 #page {
 	position:absolute; // To fix correct positioning of #masthead with and without WP admin bar
+	width:100%; // Or else the width will be "auto" in Firefox and the content will not be centered properly
 }
 #content {
 	margin-top:$lineheight*2; // Make room for #masthead
@@ -12,10 +13,11 @@ $flexLayoutPadding: 0 $horizontalBase;
 	position:fixed;
 	transition:all 0.5s;
 	height:$lineheight*2;
+	overflow:visible;
 	width:100%;
 
 	.site-branding {
-		padding: $flexLayoutPadding;
+		margin: $flexLayoutPadding;
 
 		.site-title,
 		.site-description {
