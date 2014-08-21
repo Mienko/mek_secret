@@ -7,15 +7,17 @@
 
 get_header(); ?>
 
+	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . get_header_image() . "'); height:" . get_custom_header()->height . "px;" ?>">
+	</header><!-- .page-header -->
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'mek_secret' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
+			<article class="error-404 not-found">
+				<header>
+					<h1 class="entry-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'mek_secret' ); ?></h1>
+				</header>
+				<div class="entry-content">
 					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'mek_secret' ); ?></p>
 
 					<?php get_search_form(); ?>
@@ -52,5 +54,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

@@ -131,6 +131,7 @@ add_action( 'wp_enqueue_scripts', 'mek_secret_scripts' );
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';
+add_theme_support('custom-header');
 
 /**
  * Custom template tags for this theme.

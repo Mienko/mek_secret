@@ -6,8 +6,11 @@ $smallLayoutMargin: 0 10% 0 5%;
 	position:absolute; // To fix correct positioning of #masthead with and without WP admin bar
 	width:100%; // Or else the width will be "auto" in Firefox and the content will not be centered properly
 }
-#content {
-	margin-top:$lineheight*2; // Make room for #masthead
+body .content-area {
+	margin-top:$lineheight*3; // Make room for #masthead if there's not a header image
+}
+.header-image + .content-area {
+	margin-top:-$lineheight*4.5;
 }
 #masthead {
 	position:fixed;
@@ -17,17 +20,58 @@ $smallLayoutMargin: 0 10% 0 5%;
 }
 
 .content-area {
-	margin:0 10% 0 5%;
+	margin:$smallLayoutMargin;
+}
+.page-header {
+	padding:$smallLayoutMargin;
+	padding-top:5%;
+	padding-bottom:5%;
+
+	&.header-image {
+		background-size:cover;
+		background-position:center center;
+		min-height:$lineheight*8;
+		max-height:$lineheight*10;
+
+		> * {
+			background:$lightOverlay;
+			border-radius:$borderRadius;
+			padding:0 $horizontalBase/2;
+		}
+	}
+}
+@media screen and (min-height: 500px) {
+	.page-header.header-image {
+		max-height:$lineheight*14;
+	}
+}
+@media screen and (min-height: 750px) {
+	.page-header.header-image {
+		max-height:$lineheight*20;
+	}
 }
 
 @media screen and (min-width: 800px) {
+	.page-header {
+		padding:$layoutMargin;
+		padding-top:5%;
+		padding-bottom:5%;
+
+		> * {
+			max-width:800px;
+			margin:auto;
+		}
+	}
 	.content-area {
-		margin:0 20% 0 10%;
+		margin:$layoutMargin;
 
 		.site-main {
 			max-width:800px;
 			margin:auto;
 		}
+	}
+	.header-image + .content-area {
+		margin-top:-$lineheight*5;
 	}
 	#masthead .site-branding {
 		margin:$layoutMargin;

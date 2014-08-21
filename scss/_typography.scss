@@ -15,7 +15,7 @@ $sans: "Overlock SC", sans-serif;
 body,
 button,
 select {
-	color: #404040;
+	color:$textColor;
 	font-family: $sans; 
 	font-size: 16px;
 	font-size: 1.6rem;

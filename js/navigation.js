@@ -26,7 +26,7 @@ jQuery( document ).ready(function( $ ) {
 	$(document).on('scroll', function(){
 
 		// If we're not at the top of the page ...
-		if ( $('.site-main article:first-child .entry-title').offset().top + $('.site-main article:first-child .entry-title').height() < $(document).scrollTop() ) {
+		if ( $('.site-main article:first-child .entry-title').offset().top + $('.site-main article:first-child .entry-title').height()/2 < $(document).scrollTop() ) {
 			// ... let's do fun stuff.
 
 			// If this is a page or a single post, and the entry-title is not empty

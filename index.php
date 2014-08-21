@@ -13,6 +13,11 @@
 
 get_header(); ?>
 
+<?php if ( ! is_singular() ) : ?>
+	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . get_header_image() . "'); height:" . get_custom_header()->height . "px;" ?>">
+	</header>
+<?php endif; ?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

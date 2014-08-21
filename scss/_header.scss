@@ -1,10 +1,12 @@
 #masthead {
-	background:#252525;
-	color:#fff;
+	background:$darkOverlay;
+	color:$lightTextColor;
 	transition:all 0.3s;
 
 	.site-branding {
 		margin: $smallLayoutMargin;
+		height:$lineheight*2;
+		overflow:hidden;
 
 		.menu-toggle,
 		.site-title,

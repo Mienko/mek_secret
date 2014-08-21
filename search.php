@@ -7,14 +7,14 @@
 
 get_header(); ?>
 
+	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . get_header_image() . "'); height:" . get_custom_header()->height . "px;" ?>">
+		<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'mek_secret' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+	</header><!-- .page-header -->
+
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'mek_secret' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

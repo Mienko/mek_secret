@@ -44,8 +44,8 @@
 	padding:$lineheight/2 $horizontalBase/2;
 	border-radius:$borderRadius;
 
-	background-color:#252525;
-	color:white;
+	background-color:$darkOverlay;
+	color:$lightTextColor;
 
 	dt,dd {
 		margin:0;
@@ -57,8 +57,8 @@
 .site-main article {
 	.entry-title,
 	.entry-content > p:first-of-type:first-letter {
-		background-color: #252525;
-		color: white;
+		background-color: $darkOverlay;
+		color: $lightTextColor;
 		border-radius: $borderRadius;
 		font-weight: normal;
 	}
@@ -149,8 +149,13 @@
 
 @media screen and (min-width:800px) {
 	.site-main article {
-		$articleTop: 17.0rem;
+		$articleTop: $lineheight*2;
 		margin-top: $articleTop;
+		margin-bottom: $lineheight*5;
+
+		&:last-child {
+			margin-bottom: $lineheight*3;
+		}
 
 		.entry-title {
 			font-size:6.6rem;
