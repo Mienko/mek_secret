@@ -7,11 +7,12 @@
 
 .entry-meta {
 	.icon {
+		@extend .icon-lg;
+		@extend .icon-fw;
 		margin-right:0.2em;
 	}
 	.posted-on:before {
 		@extend .icon;
-		@extend .icon-fw;
 		@extend .icon-calendar;
 
 		&:after {
@@ -21,20 +22,21 @@
 	}
 	.byline:before {
 		@extend .icon;
-		@extend .icon-fw;
 		@extend .icon-user;
 	}
 }
 
 .entry-footer {
+	.icon {
+		@extend .icon-lg;
+	}
+
 	.cat-links:before {
 		@extend .icon;
-		@extend .icon-fw;
 		@extend .icon-folder-open;
 	}
 	.tags-links:before {
 		@extend .icon;
-		@extend .icon-fw;
 		@extend .icon-tag;
 	}
 	.tags-links.plural-tags:before {
@@ -42,12 +44,10 @@
 	}
 	.permalink:before {
 		@extend .icon;
-		@extend .icon-fw;
 		@extend .icon-thumb-tack;
 	}
 	.comments-link:before {
 		@extend .icon;
-		@extend .icon-fw;
 		@extend .icon-comment;
 	}
 	.comments-link.plural-comments:before {
@@ -55,7 +55,6 @@
 	}
 	.edit-link:before {
 		@extend .icon;
-		@extend .icon-fw;
 		@extend .icon-pencil;
 	}
 }

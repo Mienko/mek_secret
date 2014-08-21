@@ -37,6 +37,10 @@
 .entry-meta,
 .entry-footer {
 	@extend small;
+
+	a {
+		color:inherit;
+	}
 }
 .entry-header .entry-meta {
 	@extend .alignright;
@@ -50,10 +54,17 @@
 	dt,dd {
 		margin:0;
 	}
-	a {
-		color:inherit;
+}
+.entry-footer {
+	display:flex;
+
+	> * {
+		flex-basis:100px;
+		flex-grow:1;
+		text-align:center;
 	}
 }
+
 .site-main article {
 	.entry-title,
 	.entry-content > p:first-of-type:first-letter {
