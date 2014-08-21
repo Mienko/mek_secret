@@ -96,3 +96,11 @@
 		@extend .icon-sign-out;
 	}
 }
+
+#colophon {
+	.wp:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-wordpress;
+	}
+}
