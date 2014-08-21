@@ -50,6 +50,11 @@ body .content-area {
 		max-height:$lineheight*20;
 	}
 }
+@media screen and (min-height: 900px) {
+	.page-header.header-image {
+		max-height:$lineheight*24;
+	}
+}
 
 @media screen and (min-width: 800px) {
 	.page-header {
