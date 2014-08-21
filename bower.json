@@ -1,0 +1,20 @@
+{
+  "name": "mek_secret",
+  "version": "0.1",
+  "authors": [
+    "Just Thomas Misund <thomas@mienko.no>"
+  ],
+  "description": "Gridless, responsive theme width outfalling elements.",
+  "license": "GNU GPL v2+",
+  "homepage": "http://mienko.no/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.1.0"
+  }
+}
