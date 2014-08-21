@@ -1,1 +1,98 @@
+@import 'font-awesome-variables';
 @import '../vendor/Font-Awesome/scss/font-awesome';
+
+.icon-unspace {
+	margin-right:0.2em;
+}
+
+.entry-meta {
+	.icon {
+		margin-right:0.2em;
+	}
+	.posted-on:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-calendar;
+
+		&:after {
+			content: '&nbsp;';
+			display:inline;
+		}
+	}
+	.byline:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-user;
+	}
+}
+
+.entry-footer {
+	.cat-links:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-folder-open;
+	}
+	.tags-links:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-tag;
+	}
+	.tags-links.plural-tags:before {
+		@extend .icon-tags;
+	}
+	.permalink:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-thumb-tack;
+	}
+	.comments-link:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-comment;
+	}
+	.comments-link.plural-comments:before {
+		@extend .icon-comments;
+	}
+	.edit-link:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-pencil;
+	}
+}
+
+#comments {
+	.fn:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-user;
+	}
+	time:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-clock-o;
+	}
+
+	.edit-link:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-pencil;
+	}
+
+	.reply:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-reply;
+	}
+
+	.logged-in-as a:first-child:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-user;
+	}
+
+	.logged-in-as a:last-child:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-sign-out;
+	}
+}
