@@ -83,7 +83,7 @@ blockquote {
 	line-height: $lineheight/2;
 	border-radius: $borderRadius;
 
-	background:#eee;
+	background: $lightOverlay;
 
 	cite {
 		display:block;
@@ -105,7 +105,7 @@ address {
 	margin: 0 0 $lineheight;
 }
 pre {
-	background: #eee;
+	background: $lightOverlay;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	//font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 17px;
@@ -122,7 +122,7 @@ code, kbd, tt, var {
 	//font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size:1.7rem;
 	padding:$lineheight/4;
-	background:#eee;
+	background: $lightOverlay;
 }
 abbr, acronym {
 	border-bottom: 1px dotted #666;
