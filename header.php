@@ -24,12 +24,12 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
+			<button class="menu-toggle" title="<?php _e( 'Primary Menu', 'mek_secret' ); ?>">&#9776;</button>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h3 class="site-description"><?php bloginfo( 'description' ); ?></h3>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" title="<?php _e( 'Primary Menu', 'mek_secret' ); ?>">&#9776;</button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

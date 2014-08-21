@@ -1,4 +1,6 @@
 $flexLayoutPadding: 0 $horizontalBase;
+$layoutMargin: 0 20% 0 10%;
+$smallLayoutMargin: 0 10% 0 5%;
 
 #page {
 	position:absolute; // To fix correct positioning of #masthead with and without WP admin bar
@@ -8,61 +10,16 @@ $flexLayoutPadding: 0 $horizontalBase;
 	margin-top:$lineheight*2; // Make room for #masthead
 }
 #masthead {
-	background:#252525;
-	color:#fff;
 	position:fixed;
-	transition:all 0.5s;
 	height:$lineheight*2;
 	overflow:visible;
 	width:100%;
-
-	.site-branding {
-		margin: $flexLayoutPadding;
-
-		.site-title,
-		.site-description {
-			margin-top:0;
-			margin-bottom:0;
-			transition:all 0.5s;
-		}
-		.site-title {
-			float:left;
-			margin-left:$lineheight*2 + 1rem; // Making room for menu-toggle
-		}
-		.site-description {
-			float:right;
-			clear:none;
-			line-height:$lineheight*1.75;
-			margin-top:$lineheight*0.25;
-		}
-		a {
-			color:white;
-			text-decoration:none;
-		}
-	}
-	&.unfocused {
-		height:$lineheight;
-
-		.site-title,
-		.site-description,
-		.menu-toggle {
-			transform:scale(0.5);
-			transform-origin:left top;
-		}
-		.site-description {
-			transform-origin:right top;
-			line-height:$lineheight*1.875;
-			margin-top:$lineheight*0.125;
-		}
-		.site-title {
-			margin-left:$lineheight + 1rem;
-		}
-	}
 }
 
 .content-area {
 	margin:0 10% 0 5%;
 }
+
 @media screen and (min-width: 800px) {
 	.content-area {
 		margin:0 20% 0 10%;
@@ -72,7 +29,16 @@ $flexLayoutPadding: 0 $horizontalBase;
 			margin:auto;
 		}
 	}
+	#masthead .site-branding {
+		margin:$layoutMargin;
+	}
 }
+@media screen and (min-width: 800px) {
+	#masthead .site-branding {
+		margin:$flexLayoutPadding;
+	}
+}
+
 
 #secondary {
 	display:flex;

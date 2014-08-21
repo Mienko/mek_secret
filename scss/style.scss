@@ -6,6 +6,7 @@
 3.0 - Elements
 4.0 - Forms
 4.5 - Layout
+4.6 - Header
 5.0 - Navigation
 	5.1 - Links
 	5.2 - Menus
@@ -23,17 +24,18 @@
 	12.2 - Galleries
 --------------------------------------------------------------*/
 
-@import 'reset';
-@import 'typography';
-@import 'elements';
-@import 'forms';
-@import 'icons';
-@import 'layout';
-@import 'navigation';
-@import 'accessibility';
-@import 'alignments';
-@import 'clearings';
-@import 'widgets';
-@import 'content';
-@import 'infinite-scroll';
-@import 'media';
+@import 'reset',
+'typography',
+'elements',
+'forms',
+'icons',
+'layout',
+'header',
+'navigation',
+'accessibility',
+'alignments',
+'clearings',
+'widgets',
+'content',
+'infinite-scroll',
+'media';

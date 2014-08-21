@@ -1,0 +1,71 @@
+#masthead {
+	background:#252525;
+	color:#fff;
+	transition:all 0.3s;
+
+	.site-branding {
+		margin: $smallLayoutMargin;
+
+		.menu-toggle,
+		.site-title,
+		.site-description {
+			margin:0;
+			transition:all 0.3s;
+		}
+		.menu-toggle {
+			@extend h1;
+
+			display: block;
+			float:left;
+			text-shadow:none;
+			box-shadow:none;
+
+			top:0;
+			left:$horizontalBase;
+			width:$lineheight*2;
+			height:$lineheight*2;
+			background:transparent;
+
+			color:white;
+
+			&:active,
+			&:focus {
+				border:1px dotted;
+			}
+		}
+		.site-title {
+			float:left;
+			clear:none;
+		}
+		.site-description {
+			float:right;
+			clear:none;
+			line-height:$lineheight*1.6;
+			margin-top:$lineheight*0.4;
+		}
+		a {
+			color:white;
+			text-decoration:none;
+		}
+	}
+	&.unfocused {
+		height:$lineheight;
+
+
+		.site-title,
+		.site-description,
+		.menu-toggle {
+			font-size:2.4rem;
+			line-height:$lineheight;
+		}
+		.menu-toggle {
+			width:$lineheight;
+			height:$lineheight;
+		}
+		.site-description {
+			font-size:1.8rem;
+			margin-top:0;
+		}
+	}
+}
+
