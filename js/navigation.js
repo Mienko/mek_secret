@@ -5,7 +5,7 @@
  */
 
 jQuery( document ).ready(function( $ ) {
-	$('#site-navigation ul').addClass('nav-menu');
+	$('#site-navigation > div > ul').addClass('nav-menu');
 
 	// Hide menu toggle button if menu is empty.
 	if ( 0 == $('#site-navigation ul').length )
