@@ -6,20 +6,20 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-<?php
-if ( has_post_thumbnail() ) {
-	$thumb_id = get_post_thumbnail_id();
-	$image = wp_get_attachment_image( $thumb_id , 'large' );
-?>
-	<figure class="wp-caption alignnone">
-<pre>
-<?php print_r( $image ); ?>
-</pre>
-	</figure>
-<?php
-}
 
-?>
+		<?php if ( has_post_thumbnail() ) {
+			$attachment = get_post( get_post_thumbnail_id() );
+			if ( $attachment->post_title || $attachment->post_excerpt ) {
+		?>
+			<div class="featured-image-caption">
+			<?php if ( $attachment->post_title ) { ?>
+				<strong><?php echo $attachment->post_title; if ( $attachment->post_excerpt ) echo ':' ?></strong>
+			<?php } ?>
+			<?php if ( $attachment->post_excerpt ) { ?>
+			<?php echo $attachment->post_excerpt; ?>
+			<?php } ?>
+			</div>
+		<?php } } ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 

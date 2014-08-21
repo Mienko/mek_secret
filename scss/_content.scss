@@ -42,17 +42,26 @@
 		color:inherit;
 	}
 }
-.entry-header .entry-meta {
-	@extend .alignright;
+.entry-header {
+	.featured-image-caption {
+		padding: $lineheight/2 $horizontalBase/2;
+		margin-bottom:$lineheight;
+		margin-top:-$lineheight*8;
+		border-radius:$borderRadius;
+		background: $lightOverlay;
+	}
+	.entry-meta {
+		@extend .alignright;
 
-	padding:$lineheight/2 $horizontalBase/2;
-	border-radius:$borderRadius;
+		padding:$lineheight/2 $horizontalBase/2;
+		border-radius:$borderRadius;
 
-	background-color:$darkOverlay;
-	color:$lightTextColor;
+		background-color:$darkOverlay;
+		color:$lightTextColor;
 
-	dt,dd {
-		margin:0;
+		dt,dd {
+			margin:0;
+		}
 	}
 }
 .entry-footer {

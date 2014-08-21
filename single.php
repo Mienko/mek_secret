@@ -7,10 +7,21 @@
 
 get_template_part( 'header' ); ?>
 
+	<?php while ( have_posts() ) : the_post(); ?>
+
+	<?php
+	if ( has_post_thumbnail() ) {
+		$thumb_id   = get_post_thumbnail_id();
+		$image      = wp_get_attachment_image_src( $thumb_id , 'large' );
+		$src        = $image[0];
+		$height     = $image[2];
+	?>
+	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . $src . "'); height:" . $height . "px;" ?>">
+	</header>
+	<?php } ?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
@@ -23,10 +34,10 @@ get_template_part( 'header' ); ?>
 				endif;
 			?>
 
-		<?php endwhile; // end of the loop. ?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php endwhile; // end of the loop. ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

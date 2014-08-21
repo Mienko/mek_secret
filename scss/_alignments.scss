@@ -40,6 +40,7 @@ img.alignright {
 }
 
 @media screen and (min-width: 800px) {
+	.featured-image-caption,
 	body .site-main article .entry-title,
 	.wp-caption.alignnone,
 	.alignleft,
@@ -49,6 +50,7 @@ img.alignright {
 	body .site-main article .entry-title {
 		padding-left:7rem;
 	}
+	.featured-image-caption,
 	.site-main article .entry-title,
 	.wp-caption.alignnone,
 	.alignright,
@@ -76,6 +78,7 @@ img.alignright {
 
 }
 @media screen and (min-width: 1250px) {
+	.featured-image-caption,
 	body .site-main article .entry-title,
 	.wp-caption.alignnone,
 	.alignleft,
@@ -85,6 +88,7 @@ img.alignright {
 	body .site-main article .entry-title {
 		padding-left:14rem;
 	}
+	.featured-image-caption,
 	body .site-main article .entry-title,
 	.wp-caption.alignnone,
 	.alignright,
@@ -95,6 +99,7 @@ img.alignright {
 	}
 }
 @media screen and (min-width: 1380px) {
+	.featured-image-caption,
 	body .site-main article .entry-title,
 	.wp-caption.alignnone,
 	.alignleft,
@@ -104,6 +109,7 @@ img.alignright {
 	body .site-main article .entry-title {
 		padding-left:20rem;
 	}
+	.featured-image-caption,
 	body .site-main article .entry-title,
 	.wp-caption.alignnone,
 	.alignright,
