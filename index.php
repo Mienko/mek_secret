@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<?php if ( ! is_singular() && get_header_image() ) : ?>
+<?php if ( ! is_singular() && ! is_paged() && get_header_image() ) : ?>
 	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . get_header_image() . "'); height:" . get_custom_header()->height . "px;" ?>">
 	</header>
 <?php endif; ?>
