@@ -24,8 +24,8 @@ body .content-area {
 }
 .page-header {
 	padding:$smallLayoutMargin;
-	padding-top:5%;
-	padding-bottom:5%;
+	padding-top:$lineheight*3;
+	padding-bottom:$lineheight*3;
 
 	&.header-image {
 		background-size:cover;
@@ -38,6 +38,10 @@ body .content-area {
 			border-radius:$borderRadius;
 			padding:0 $horizontalBase/2;
 		}
+	}
+	.page-title {
+		margin-top:0;
+		margin-bottom:0;
 	}
 }
 @media screen and (min-height: 500px) {
@@ -59,8 +63,8 @@ body .content-area {
 @media screen and (min-width: 800px) {
 	.page-header {
 		padding:$layoutMargin;
-		padding-top:5%;
-		padding-bottom:5%;
+		padding-top:$lineheight*3;
+		padding-bottom:$lineheight*3;
 
 		> * {
 			max-width:800px;

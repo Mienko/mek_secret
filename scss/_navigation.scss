@@ -144,9 +144,11 @@ a:active {
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
 	@extend .alignleft;
+	@extend button;
 }
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
 	@extend .alignright;
+	@extend button;
 }

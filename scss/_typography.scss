@@ -83,7 +83,7 @@ blockquote {
 	line-height: $lineheight/2;
 	border-radius: $borderRadius;
 
-	background: $lightOverlay;
+	background: rgba(0,0,0,0.08);
 
 	cite {
 		display:block;
