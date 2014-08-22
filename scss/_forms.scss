@@ -17,9 +17,6 @@ input[type="reset"],
 input[type="submit"] {
 	@extend button;
 }
-input[type="submit"] {
-	float:right;
-}
 button {
 	background:$darkOverlay;
 	color:white;
@@ -42,6 +39,11 @@ button {
 		margin-left:-$horizontalBase/2;
 		margin-right:-$horizontalBase/2;
 		padding:$lineheight/2 $horizontalBase/2;
+	}
+	
+	&[type="submit"] {
+		float:right;
+		background:rgba(70,170,0,1.0);
 	}
 }
 button:hover {
