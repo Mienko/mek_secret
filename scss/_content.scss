@@ -195,6 +195,10 @@
 
 			&.sticky {
 				margin-top: $lineheight;
+
+				&.format-aside {
+					margin-top: $lineheight*4;
+				}
 			}
 		}
 
