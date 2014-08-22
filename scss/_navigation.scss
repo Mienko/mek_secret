@@ -37,27 +37,6 @@ a:active {
 		left:0;
 	}
 
-	.menu-toggle {
-		@extend h1;
-
-		display: block;
-		margin:0;
-		text-shadow:none;
-		box-shadow:none;
-
-		top:0;
-		left:$horizontalBase;
-		width:$lineheight*2;
-		height:$lineheight*2;
-		background:transparent;
-
-		color:white;
-
-		&:active,
-		&:focus {
-			border:1px dotted;
-		}
-	}
 	ul.nav-menu {
 		list-style:none;
 		justify-content:space-between;
