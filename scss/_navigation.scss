@@ -87,6 +87,7 @@ a:active {
 
 				ul {
 					top: 0;
+					min-width:$horizontalBase*5;
 				}
 
 			}
@@ -96,10 +97,16 @@ a:active {
 			left:0;
 			right:0;
 			padding-left:$horizontalBase;
+			background:#eee;
 
 			ul {
-				margin-left:100%;
-				top:0;
+				margin-left:33%;
+				top:100%;
+				background:#ccc;
+				
+				ul {
+					background:#aaa;
+				}
 			}
 		}
 		
