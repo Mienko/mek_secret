@@ -17,6 +17,9 @@ input[type="reset"],
 input[type="submit"] {
 	@extend button;
 }
+input[type="submit"] {
+	float:right;
+}
 button {
 	background:$darkOverlay;
 	color:white;

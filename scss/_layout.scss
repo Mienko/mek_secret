@@ -8,6 +8,7 @@ $smallLayoutMargin: 0 10% 0 5%;
 }
 body .content-area {
 	margin-top:$lineheight*3; // Make room for #masthead if there's not a header image
+	margin-bottom:$lineheight*2;
 }
 .header-image + .content-area {
 	margin-top:-$lineheight*4.5;
@@ -20,6 +21,7 @@ body .content-area {
 }
 
 .content-area {
+	@extend .clear;
 	margin:$smallLayoutMargin;
 }
 .page-header {
