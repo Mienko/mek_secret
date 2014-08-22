@@ -1,4 +1,9 @@
 	<footer class="entry-footer">
+		<?php if ( is_sticky() ) : ?>
+			<div class="featured"><br>
+				<?php _e( 'Featured' , 'mek_secret' ); ?>
+			</div>
+		<?php endif; // End if sticky ?>
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */

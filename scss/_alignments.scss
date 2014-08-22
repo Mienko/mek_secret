@@ -75,7 +75,12 @@ img.alignright {
 	blockquote.right {
 		max-width:300px;
 	}
-
+	body .sticky {
+		margin-left:-9rem;
+		padding-left:9rem;
+		margin-right:-11rem;
+		padding-right:11rem;
+	}
 }
 @media screen and (min-width: 1250px) {
 	.featured-image-caption,
@@ -97,6 +102,12 @@ img.alignright {
 	body.page .site-main article .entry-title {
 		margin-right:-18rem;
 	}
+	body .sticky {
+		margin-left:-16rem;
+		padding-left:16rem;
+		margin-right:-20rem;
+		padding-right:20rem;
+	}
 }
 @media screen and (min-width: 1380px) {
 	.featured-image-caption,
@@ -117,5 +128,11 @@ img.alignright {
 	body.single .site-main article .entry-title,
 	body.page .site-main article .entry-title {
 		margin-right:-26rem;
+	}
+	body .sticky {
+		margin-left:-22rem;
+		padding-left:22rem;
+		margin-right:-28rem;
+		padding-right:28rem;
 	}
 }

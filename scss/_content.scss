@@ -5,6 +5,15 @@
 10.1 Posts and pages
 --------------------------------------------------------------*/
 .sticky {
+	background:rgba(56,232,17,0.25);
+	padding-top:0.1px;
+	padding-bottom:$lineheight/2;
+	border-radius:$borderRadius;
+
+	margin-left:-2rem;
+	padding-left:2rem;
+	margin-right:-2rem;
+	padding-right:2rem;
 }
 .hentry {
 	margin: 0 0 $lineheight;
