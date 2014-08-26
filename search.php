@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . get_header_image() . "'); height:" . get_custom_header()->height . "px;" ?>">
+	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . get_header_image() . "');" ?>">
 		<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'mek_secret' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 	</header><!-- .page-header -->
 

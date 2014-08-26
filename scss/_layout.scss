@@ -18,61 +18,15 @@ body .content-area {
 	height:$lineheight*2;
 	overflow:visible;
 	width:100%;
+	z-index:3;
 }
 
 .content-area {
 	@extend .clear;
 	margin:$smallLayoutMargin;
 }
-.page-header {
-	padding:$smallLayoutMargin;
-	padding-top:$lineheight*3;
-	padding-bottom:$lineheight*3;
-
-	&.header-image {
-		background-size:cover;
-		background-position:center center;
-		min-height:$lineheight*8;
-		max-height:$lineheight*10;
-
-		> * {
-			background:$lightOverlay;
-			border-radius:$borderRadius;
-			padding:0 $horizontalBase/2;
-		}
-	}
-	.page-title {
-		margin-top:0;
-		margin-bottom:0;
-	}
-}
-@media screen and (min-height: 500px) {
-	.page-header.header-image {
-		max-height:$lineheight*14;
-	}
-}
-@media screen and (min-height: 750px) {
-	.page-header.header-image {
-		max-height:$lineheight*20;
-	}
-}
-@media screen and (min-height: 900px) {
-	.page-header.header-image {
-		max-height:$lineheight*24;
-	}
-}
 
 @media screen and (min-width: 800px) {
-	.page-header {
-		padding:$layoutMargin;
-		padding-top:$lineheight*3;
-		padding-bottom:$lineheight*3;
-
-		> * {
-			max-width:800px;
-			margin:auto;
-		}
-	}
 	.content-area {
 		margin:$layoutMargin;
 
@@ -80,9 +34,6 @@ body .content-area {
 			max-width:800px;
 			margin:auto;
 		}
-	}
-	.header-image + .content-area {
-		margin-top:-$lineheight*5;
 	}
 	#masthead .site-branding {
 		margin:$layoutMargin;
@@ -93,7 +44,6 @@ body .content-area {
 		margin:$flexLayoutPadding;
 	}
 }
-
 
 #secondary {
 	display:flex;

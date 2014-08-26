@@ -59,14 +59,10 @@
 		color:inherit;
 	}
 }
+
+
+
 .entry-header {
-	.featured-image-caption {
-		padding: $lineheight/2 $horizontalBase/2;
-		margin-bottom:$lineheight;
-		margin-top:-$lineheight*8;
-		border-radius:$borderRadius;
-		background: $lightOverlay;
-	}
 	.entry-meta {
 		@extend .alignright;
 
@@ -128,6 +124,8 @@
 		padding: 1.1rem 0.8rem;
 	}
 }
+
+
 @media screen and (max-width:569px) {
 	.entry-header .entry-meta {
 		width:100%;
@@ -207,17 +205,6 @@
 		}
 	}
 }
-/*
-.cover-img {
-	position:absolute;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
-	background-size:cover;
-	background-position:center;
-}
-*/
 
 /*--------------------------------------------------------------
 10.2 Asides
@@ -227,9 +214,13 @@
 	display: none;
 }
 
+/*--------------------------------------------------------------
+10.3 Featured images and custom header image
+--------------------------------------------------------------*/
+@import 'featured-images';
 
 /*--------------------------------------------------------------
-10.3 Comments
+10.4 Comments
 --------------------------------------------------------------*/
 #comments {
 

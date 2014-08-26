@@ -14,9 +14,8 @@ get_template_part( 'header' ); ?>
 		$thumb_id   = get_post_thumbnail_id();
 		$image      = wp_get_attachment_image_src( $thumb_id , 'large' );
 		$src        = $image[0];
-		$height     = $image[2];
 	?>
-	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . $src . "'); height:" . $height . "px;" ?>">
+	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . $src . "');" ?>">
 	</header>
 	<?php } ?>
 

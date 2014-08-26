@@ -1,0 +1,115 @@
+/**
+ * This stylesheet styles featured images on posts and pages,
+ * and also the Custom Header Image feature.
+ */
+
+// Thumbnails on non-singular templates
+.home, .blog, .archive {
+	.site-main article.has-post-thumbnail {
+		.entry-header {
+			$featuredImageTop: 550px;
+			padding-top: $featuredImageTop;
+
+			.featured-image {
+
+				position: absolute;
+				left: 0;
+				right: 0;
+				height: 700px;
+				background: url('http://secrettest.urania.mienko.no/wp-content/uploads/sites/9/2011/01/DSC_2364-bergen.jpg') no-repeat center center;
+				z-index: 1;
+				margin-top: -$featuredImageTop;
+				background-size: cover;
+			}
+
+			.entry-title {
+				z-index:2;
+				position:relative;
+			}
+		}
+
+		&:first-child {
+			margin-top:-$lineheight*3;
+		}
+	}
+}
+// Post thumbnails on singular templates,
+.single, .page {
+	.entry-header {
+		.featured-image-caption {
+			padding: $lineheight/2 $horizontalBase/2;
+			margin-bottom:$lineheight;
+			margin-top:-$lineheight*3.5;
+			border-radius:$borderRadius;
+			background: $lightOverlay;
+		}
+	}
+}
+
+// Post thumbnails on singular templates,
+// and also the site's custom header image on non-singular templates
+.page-header {
+	padding:$smallLayoutMargin;
+	padding-top:$lineheight*3;
+	padding-bottom:$lineheight*3;
+
+	&.header-image {
+		background-size:cover;
+		background-position:center center;
+		//min-height:$lineheight*8;
+		//max-height:$lineheight*10;
+		height:$lineheight*10;
+
+		> * {
+			background:$lightOverlay;
+			border-radius:$borderRadius;
+			padding:0 $horizontalBase/2;
+		}
+	}
+	.page-title {
+		margin-top:0;
+		margin-bottom:0;
+	}
+}
+
+// Page header on search template
+.search .page-header.header-image {
+	padding-bottom:$lineheight*4;
+	min-height:$lineheight*11;
+	height:auto;
+}
+
+@media screen and (min-height: 500px) {
+	.page-header.header-image {
+		//max-height:$lineheight*14;
+		height:$lineheight*14;
+	}
+}
+@media screen and (min-height: 750px) {
+	.page-header.header-image {
+		//max-height:$lineheight*20;
+		height:$lineheight*20;
+	}
+}
+@media screen and (min-width: 800px) {
+	.page-header {
+		padding:$layoutMargin;
+		padding-top:$lineheight*3;
+		padding-bottom:$lineheight*3;
+
+		> * {
+			max-width:800px;
+			margin:auto;
+		}
+	}
+
+	.header-image + .content-area {
+		margin-top:-$lineheight*5;
+	}
+}
+@media screen and (min-height: 900px) {
+	.page-header.header-image {
+		//max-height:$lineheight*24;
+		height:$lineheight*24;
+	}
+}
