@@ -3,11 +3,12 @@
 --------------------------------------------------------------*/
 .widget {
 	min-width:225px;
-	margin: $lineheight/2 $horizontalBase/2;
+	margin: $lineheight*3/2 $horizontalBase/2 $lineheight/2;
 	flex:1;
 
 	h1 {
 		@extend h3;
+		margin-top:0;
 	}
 
 	> ul {
