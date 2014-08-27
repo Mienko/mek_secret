@@ -44,7 +44,7 @@
 		@extend .icon;
 		@extend .icon-tag;
 	}
-	.tags-links.plural-tags:before {
+	.tags-links.plural-tags::before {
 		@extend .icon-tags;
 	}
 	.permalink:before {
