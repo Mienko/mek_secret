@@ -15,7 +15,7 @@ get_template_part( 'header' ); ?>
 		$image      = wp_get_attachment_image_src( $thumb_id , 'large' );
 		$src        = $image[0];
 	?>
-	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . $src . "');" ?>">
+	<header class="page-header header-image" style="background-image: url('<?php echo $src; ?>');">
 	</header>
 	<?php } ?>
 
