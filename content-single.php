@@ -19,7 +19,7 @@
 			<?php echo $attachment->post_excerpt; ?>
 			<?php } ?>
 			</div>
-		<?php } } ?>
+		<?php } } ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
