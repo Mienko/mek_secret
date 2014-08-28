@@ -14,7 +14,7 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'mek_secret' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'mek_secret' ), '<span class="wp">WordPress</span>' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'mek_secret' ), 'Secret', '<a href="http://mienko.no/" rel="designer">Mienko</a>' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', 'mek_secret' ), 'Secret', '<a href="' . esc_url( 'http://mienko.no/' ) . '" rel="designer">Mienko</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
