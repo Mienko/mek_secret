@@ -118,8 +118,8 @@ add_action( 'widgets_init', 'mek_secret_widgets_init' );
 function mek_secret_scripts() {
 	wp_enqueue_style( 'mek_secret-style', get_template_directory_uri() . '/css/style.css' );
 
+   wp_register_script( 'mek_secret-parallax', get_template_directory_uri() . '/js/parallax.js', array('jquery'), '20140828', true );
 	wp_enqueue_script( 'mek_secret-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20120206', true );
-
 	wp_enqueue_script( 'mek_secret-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -127,6 +127,15 @@ function mek_secret_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'mek_secret_scripts' );
+
+/**
+ * Enqueue parallax script if a header image is loaded in .page-header.
+ */
+function mek_enqueue_parallax( $args ) {
+		  wp_enqueue_script( 'mek_secret-parallax' );
+        return $args;
+}
+add_filter( 'theme_mod_header_image', 'mek_enqueue_parallax' );
 
 /**
  * Implement the Custom Header feature.

@@ -14,6 +14,7 @@ get_template_part( 'header' ); ?>
 		$thumb_id   = get_post_thumbnail_id();
 		$image      = wp_get_attachment_image_src( $thumb_id , 'large' );
 		$src        = $image[0];
+		wp_enqueue_script( 'mek_secret-parallax' );
 	?>
 	<header class="page-header header-image" style="background-image: url('<?php echo $src; ?>');">
 	</header>
