@@ -92,7 +92,7 @@ function mek_secret_media_settings() {
 		</div>';
 	add_action( 'admin_notices', $c = create_function( '', 'echo "' . addcslashes( $msg, '"' ) . '";' ) );
 }
-add_action( 'after_switch_theme', 'mek_secret_media_settings' );
+//add_action( 'after_switch_theme', 'mek_secret_media_settings' );
 
 /**
  * Register widget area.
