@@ -16,6 +16,22 @@ a:active {
 	color: midnightblue;
 }
 
+// Lighter scheme for footer
+#secondary {
+	a {
+		color: hsl(225,26%,90%);
+	}
+	a:visited {
+		color: hsl(225,26%,80%);
+	}
+	a:hover,
+	a:focus,
+	a:active {
+		color: hsl(225,26%,70%);
+	}
+}
+
+
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
