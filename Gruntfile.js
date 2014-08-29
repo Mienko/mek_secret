@@ -81,6 +81,11 @@ module.exports = function(grunt) {
 				files: {
 					'README.md': ['docs/src/README.md']
 				}
+			},
+			copy_fonts: {
+				files: {
+					'fonts/': ['bower_components/fontawesome/fonts/**'],
+				}
 			}
 		},
 
