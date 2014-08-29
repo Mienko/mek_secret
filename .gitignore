@@ -1,4 +1,6 @@
 css/
+style.css
 .sass-cache/
 *.swp
 bower_components/
+node_modules/

@@ -116,7 +116,7 @@ add_action( 'widgets_init', 'mek_secret_widgets_init' );
  * Enqueue scripts and styles.
  */
 function mek_secret_scripts() {
-	wp_enqueue_style( 'mek_secret-style', get_template_directory_uri() . '/css/style.css' );
+	wp_enqueue_style( 'mek_secret-style', get_template_directory_uri() . '/style.css' );
 
    wp_register_script( 'mek_secret-parallax', get_template_directory_uri() . '/js/parallax.js', array('jquery'), '20140828', true );
 	wp_enqueue_script( 'mek_secret-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20120206', true );
