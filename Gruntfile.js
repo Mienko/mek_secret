@@ -69,23 +69,37 @@ module.exports = function(grunt) {
 			minify: {
 				expand: true,
 				flatten: true,
-				cwd: 'styles/',
+				//cwd: 'styles/',
 				src: '*.css',
 				ext: '.css'
 			}
 		},
 		
-		/* Copy Readme.md to project root */
 		copy: {
-			copy_readme: {
-				files: {
-					'README.md': ['docs/src/README.md']
-				}
+			fonts: {
+				files: [ {
+					expand: true,
+					flatten: true,
+					dest: 'fonts/',
+					src: ['bower_components/fontawesome/fonts/**'],
+					filter: 'isFile'
+				} ]
 			},
-			copy_fonts: {
-				files: {
-					'fonts/': ['bower_components/fontawesome/fonts/**'],
-				}
+			build: {
+				files: [
+					{ expand: true , src: ['*.php'] , dest: 'build/' },
+					{ expand: true , src: ['*.css'] , dest: 'build/' },
+					{ expand: false, src: ['fonts/**'], dest: 'build/fonts/' },
+					{ expand: true , src: ['inc/**'], dest: 'build/inc/' },
+					{ expand: true , src: ['js/**'], dest: 'build/js/' },
+					{ expand: true , src: ['languages/**'], dest: 'build/languages/' },
+				]
+			}
+		},
+
+		clean: {
+			build: {
+				src: ["",""]
 			}
 		},
 
@@ -97,14 +111,14 @@ module.exports = function(grunt) {
 			},
 */
 			css: {
-				files: ['styles/src/**/*.scss'],
+				files: ['scss/*.scss'],
 				tasks: ['sass', 'autoprefixer', 'cssmin']
 			},
 			livereload: {
 				options: { livereload: true },
 				files: ['*.php', '**/*.php', 'style.css', 'css/**', 'js/build/*.js']
 			}
-		},
+		}
 		
 	});
 	
@@ -129,12 +143,17 @@ module.exports = function(grunt) {
 		'autoprefixer',
 		'cssmin',
 		//'markdown',
-		'copy'
+		'copy:fonts',
 	]);
 		
 	// $ grunt dev: Starts MAMP server, watches for changes while developing.
 	grunt.registerTask('dev', [
 		'watch',
+	]);
+
+	grunt.registerTask('build' , [
+		'default',
+		'copy:build',
 	]);
 
 };
