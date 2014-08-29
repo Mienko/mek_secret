@@ -97,6 +97,23 @@ module.exports = function(grunt) {
 			}
 		},
 
+		makepot: {
+			target: {
+				options: {
+					cwd: 'build',
+					domainPath: '/languages',
+					mainFile: 'style.css',
+					potFilename: 'mek_secret.pot',
+					processPot: function( pot, options ) {
+						pot.headers['report-msgid-bugs-to'] = 'http://mienko.no/kontakt/';
+						pot.headers['language-team'] = 'Mienko <mienko@mienko.no>';
+						return pot;
+					},
+					type: 'wp-theme'
+				}
+			}
+		},
+
 		clean: {
 			build: {
 				src: ["",""]
@@ -131,6 +148,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-wp-i18n');
 
 	
 	// Workflows
@@ -154,6 +172,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('build' , [
 		'default',
 		'copy:build',
+		'makepot'
 	]);
 
 };
