@@ -52,6 +52,7 @@
 	padding:$smallLayoutMargin;
 	padding-top:$lineheight*3;
 	padding-bottom:$lineheight*3;
+	transition:all 0.3s;
 
 	&.header-image {
 		background-size:cover;
