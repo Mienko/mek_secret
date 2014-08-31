@@ -166,6 +166,7 @@ module.exports = function(grunt) {
 		
 	// $ grunt dev: Starts MAMP server, watches for changes while developing.
 	grunt.registerTask('dev', [
+		'default',
 		'watch',
 	]);
 
