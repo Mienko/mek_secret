@@ -15,20 +15,40 @@
 		margin-left:0;
 		list-style-position:inside;
 	}
-}
-.widget:first-child {
-	margin-left:0;
-}
-.widget:last-child {
-	margin-right:0;
-}
 
-/* Make sure select elements fit in widgets */
-.widget select {
-	max-width: 100%;
+	&:first-child {
+		margin-left:0;
+	}
+	&:last-child {
+		margin-right:0;
+	}
+
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
+
+	table {
+		td,th {
+			padding:$lineheight/4 $horizontalBase/4;
+		}
+	}
 }
 
 /* Search widget */
 .widget_search .search-submit {
 	display: none;
+}
+
+/* Calendar widget */
+.widget_calendar {
+	th,td {
+		text-align:center;
+	}
+	#prev {
+		text-align:left;
+	}
+	#next {
+		text-align:right;
+	}
 }

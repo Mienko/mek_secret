@@ -5,30 +5,47 @@
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: hsl(225,73%,57%);
+	color: $darkLinkColor;
 }
 a:visited {
-	color: hsl(225,26%,36%);
+	color: $darkLinkVisitedColor;
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: $darkLinkHoverColor;
 }
 
 // Lighter scheme for footer
 #secondary {
 	a {
-		color: hsl(225,26%,90%);
+		color: $lightLinkColor;
 	}
 	a:visited {
-		color: hsl(225,26%,80%);
+		color: $lightLinkVisitedColor; 
 	}
 	a:hover,
 	a:focus,
 	a:active {
-		color: hsl(225,26%,70%);
+		color: $lightLinkHoverColor;
 	}
+
+		// Make for readable links in tables in widgets
+		tr:nth-child(2n+1) {
+			color:#333;
+
+			a {
+				color: $darkLinkColor;
+			}
+			a:visited {
+				color: $darkLinkVisitedColor;
+			}
+			a:hover,
+			a:focus,
+			a:active {
+				color: $darkLinkHoverColor;
+			}
+		}
 }
 
 

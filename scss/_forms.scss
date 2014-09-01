@@ -10,6 +10,11 @@ textarea {
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
 }
 
+select {
+	padding:$lineheight/4 $horizontalBase/4;
+	margin:$lineheight/4 0;
+}
+
 .btn,
 .button,
 input[type="button"],
