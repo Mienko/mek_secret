@@ -42,7 +42,7 @@ img.alignright {
 @media screen and (min-width: 800px) {
 	.featured-image-caption,
 	body .site-main article .entry-title,
-	.wp-caption.alignnone,
+	#primary .wp-caption.alignnone,
 	.alignleft,
 	blockquote.left {
 		margin-left:-7rem;
@@ -52,7 +52,7 @@ img.alignright {
 	}
 	.featured-image-caption,
 	.site-main article .entry-title,
-	.wp-caption.alignnone,
+	#primary .wp-caption.alignnone,
 	.alignright,
 	blockquote.right,
 	body.single .site-main article .entry-title,
@@ -60,7 +60,7 @@ img.alignright {
 		margin-right:-9rem;
 	}
 
-	.wp-caption.alignnone {
+	#primary .wp-caption.alignnone {
 		width:auto !important;
 		max-width:none !important;
 
@@ -85,7 +85,7 @@ img.alignright {
 @media screen and (min-width: 1250px) {
 	.featured-image-caption,
 	body .site-main article .entry-title,
-	.wp-caption.alignnone,
+	#primary .wp-caption.alignnone,
 	.alignleft,
 	blockquote.left {
 		margin-left:-14rem;
@@ -95,7 +95,7 @@ img.alignright {
 	}
 	.featured-image-caption,
 	body .site-main article .entry-title,
-	.wp-caption.alignnone,
+	#primary .wp-caption.alignnone,
 	.alignright,
 	blockquote.right,
 	body.single .site-main article .entry-title,
@@ -112,7 +112,7 @@ img.alignright {
 @media screen and (min-width: 1380px) {
 	.featured-image-caption,
 	body .site-main article .entry-title,
-	.wp-caption.alignnone,
+	#primary .wp-caption.alignnone,
 	.alignleft,
 	blockquote.left {
 		margin-left:-20rem;
@@ -122,7 +122,7 @@ img.alignright {
 	}
 	.featured-image-caption,
 	body .site-main article .entry-title,
-	.wp-caption.alignnone,
+	#primary .wp-caption.alignnone,
 	.alignright,
 	blockquote.right,
 	body.single .site-main article .entry-title,

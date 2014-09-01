@@ -2,10 +2,10 @@
 	background:$darkOverlay;
 	color:$lightTextColor;
 	transition:all 0.3s;
+	min-height:$lineheight*2;
 
 	.site-branding {
 		margin: $smallLayoutMargin;
-		height:$lineheight*2;
 		overflow:hidden;
 
 		.menu-toggle,
@@ -34,6 +34,10 @@
 				border:1px dotted;
 			}
 		}
+		.site-title,
+		.site-description {
+			max-width:40%;
+		}
 		.site-title {
 			float:left;
 			clear:none;
@@ -50,7 +54,7 @@
 		}
 	}
 	&.unfocused {
-		height:$lineheight;
+		min-height:$lineheight;
 
 
 		.site-title,
