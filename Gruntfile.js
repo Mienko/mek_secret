@@ -93,6 +93,7 @@ module.exports = function(grunt) {
 					{ expand: true , src: ['inc/**'], dest: 'build/mek_secret/' },
 					{ expand: true , src: ['js/**'], dest: 'build/mek_secret/' },
 					{ expand: true , src: ['languages/**'], dest: 'build/mek_secret/' },
+					{ src: ['screenshot.png'], dest: 'build/mek_secret/' },
 				]
 			}
 		},
