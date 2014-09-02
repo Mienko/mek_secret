@@ -130,9 +130,8 @@ module.exports = function(grunt) {
 		},
 
 		clean: {
-			build: {
-				src: ["",""]
-			}
+			build: ["build/"],
+			all: ["build/","languages/mek_secret.pot", "style.css"]
 		},
 
 		watch: {
@@ -165,6 +164,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-wp-i18n');
 	grunt.loadNpmTasks('grunt-contrib-compress');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 	
 	// Workflows
 	// $ grunt: Concencates, prefixes, minifies JS and CSS files, shrinks images, and generates docs. The works.
