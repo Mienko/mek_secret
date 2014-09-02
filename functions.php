@@ -25,8 +25,6 @@ function mek_secret_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on mek_secret, use a find and replace
-	 * to change 'mek_secret' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'mek_secret', get_template_directory() . '/languages' );
 
