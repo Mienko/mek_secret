@@ -68,6 +68,8 @@
 	.page-title {
 		margin-top:0;
 		margin-bottom:0;
+		z-index:2; // Float above featured image of first post on page
+		position:relative; // Make z-index take effect
 	}
 }
 
