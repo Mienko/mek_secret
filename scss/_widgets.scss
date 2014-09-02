@@ -42,8 +42,11 @@
 
 /* Calendar widget */
 .widget_calendar {
-	th,td {
-		text-align:center;
+	table {
+		th,td {
+			text-align:center;
+			padding:$lineheight/4 $horizontalBase/8;
+		}
 	}
 	#prev {
 		text-align:left;
