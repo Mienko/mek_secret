@@ -89,10 +89,10 @@ module.exports = function(grunt) {
 				files: [
 					{ expand: true , src: ['*.php'] , dest: 'build/' },
 					{ expand: true , src: ['*.css'] , dest: 'build/' },
-					{ expand: false, src: ['fonts/**'], dest: 'build/fonts/' },
-					{ expand: true , src: ['inc/**'], dest: 'build/inc/' },
-					{ expand: true , src: ['js/**'], dest: 'build/js/' },
-					{ expand: true , src: ['languages/**'], dest: 'build/languages/' },
+					{ expand: false, src: ['fonts/**'], dest: 'build/' },
+					{ expand: true , src: ['inc/**'], dest: 'build/' },
+					{ expand: true , src: ['js/**'], dest: 'build/' },
+					{ expand: true , src: ['languages/**'], dest: 'build/' },
 				]
 			}
 		},
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
 		makepot: {
 			target: {
 				options: {
-					cwd: 'build',
+					cwd: '',
 					domainPath: '/languages',
 					mainFile: 'style.css',
 					potFilename: 'mek_secret.pot',
@@ -162,6 +162,7 @@ module.exports = function(grunt) {
 		'cssmin',
 		//'markdown',
 		'copy:fonts',
+		'makepot'
 	]);
 		
 	// $ grunt dev: Starts MAMP server, watches for changes while developing.
@@ -172,8 +173,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('build' , [
 		'default',
-		'copy:build',
-		'makepot'
+		'copy:build'
 	]);
 
 };
