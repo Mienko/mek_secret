@@ -87,12 +87,12 @@ module.exports = function(grunt) {
 			},
 			build: {
 				files: [
-					{ expand: true , src: ['*.php'] , dest: 'build/' },
-					{ expand: true , src: ['*.css'] , dest: 'build/' },
-					{ expand: false, src: ['fonts/**'], dest: 'build/' },
-					{ expand: true , src: ['inc/**'], dest: 'build/' },
-					{ expand: true , src: ['js/**'], dest: 'build/' },
-					{ expand: true , src: ['languages/**'], dest: 'build/' },
+					{ expand: true , src: ['*.php'] , dest: 'build/mek_secret/' },
+					{ expand: true , src: ['*.css'] , dest: 'build/mek_secret/' },
+					{ expand: false, src: ['fonts/**'], dest: 'build/mek_secret/' },
+					{ expand: true , src: ['inc/**'], dest: 'build/mek_secret/' },
+					{ expand: true , src: ['js/**'], dest: 'build/mek_secret/' },
+					{ expand: true , src: ['languages/**'], dest: 'build/mek_secret/' },
 				]
 			}
 		},
@@ -111,6 +111,21 @@ module.exports = function(grunt) {
 					},
 					type: 'wp-theme'
 				}
+			}
+		},
+
+		compress: {
+			build: {
+				options: {
+					archive: 'build/mek_secret.zip'
+				},
+				files: [
+					{
+						expand: true,
+						cwd: 'build/',
+						src: '**',
+					}
+				]
 			}
 		},
 
@@ -149,7 +164,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-wp-i18n');
-
+	grunt.loadNpmTasks('grunt-contrib-compress');
 	
 	// Workflows
 	// $ grunt: Concencates, prefixes, minifies JS and CSS files, shrinks images, and generates docs. The works.
@@ -173,7 +188,8 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('build' , [
 		'default',
-		'copy:build'
+		'copy:build',
+		'compress:build',
 	]);
 
 };
