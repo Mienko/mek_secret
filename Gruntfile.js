@@ -93,7 +93,6 @@ module.exports = function(grunt) {
 					{ expand: true , src: ['inc/**'], dest: 'build/mek_secret/' },
 					{ expand: true , src: ['js/**'], dest: 'build/mek_secret/' },
 					{ expand: true , src: ['languages/**'], dest: 'build/mek_secret/' },
-					{ src: ['screenshot.png'], dest: 'build/mek_secret/' },
 				]
 			}
 		},
@@ -111,6 +110,14 @@ module.exports = function(grunt) {
 						return pot;
 					},
 					type: 'wp-theme'
+				}
+			}
+		},
+
+		image: {
+			build: {
+				files: {
+					'build/mek_secret/screenshot.png': 'screenshot.png'
 				}
 			}
 		},
@@ -166,6 +173,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-wp-i18n');
 	grunt.loadNpmTasks('grunt-contrib-compress');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-image');
 	
 	// Workflows
 	// $ grunt: Concencates, prefixes, minifies JS and CSS files, shrinks images, and generates docs. The works.
@@ -190,6 +198,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('build' , [
 		'default',
 		'copy:build',
+		'image:build',
 		'compress:build',
 	]);
 
