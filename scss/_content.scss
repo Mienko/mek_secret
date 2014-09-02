@@ -26,15 +26,19 @@
 .hentry {
 	margin: 0 0 $lineheight;
 }
-.byline,
-.updated,
-.author {
-	display: none;
+.entry-meta {
+	.byline,
+	.updated,
+	.author {
+		display: none;
+	}
 }
 .single.group-blog {
-	.byline,
-	.author {
-		display: inline;
+	.entry-meta {
+		.byline,
+		.author {
+			display: inline;
+		}
 	}
 	.site-main article .entry-content > p:first-of-type:first-letter {
 		line-height:$lineheight*3;
@@ -231,6 +235,7 @@
 	}
 
 	.comment {
+		margin-top:$lineheight;
 		margin-bottom:$lineheight;
 		border-radius:$borderRadius;
 
