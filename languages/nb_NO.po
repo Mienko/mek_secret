@@ -1,0 +1,327 @@
+# Copyright (C) 2014 Mienko
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Secret 0.1.0\n"
+"Report-Msgid-Bugs-To: http://mienko.no/kontakt/\n"
+"POT-Creation-Date: 2014-09-03 17:13:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-09-03 19:52+0100\n"
+"Last-Translator: Just Thomas Misund <thomas@mienko.no>\n"
+"Language-Team: Mienko <mienko@mienko.no>\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: Norwegian Bokmål\n"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oisann! Den sida finnes ikke."
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Det ser ut som om ingenting finnes på denne adressa. Kanskje det hjelper å "
+"prøve en av lenkene under, eller å søke?"
+
+#: 404.php:29
+msgid "Most Used Categories"
+msgstr "Mest brukte kategorier"
+
+#. translators: %1$s: smiley
+#: 404.php:46
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Prøv å se gjennom de månedlige arkivene. %1$s"
+
+#: archive.php:22
+msgid "Author: %s"
+msgstr "Skribent: %s"
+
+#: archive.php:25
+msgid "Day: %s"
+msgstr "Dag: %s"
+
+#: archive.php:28
+msgid "Month: %s"
+msgstr "Måned: %s"
+
+#: archive.php:31
+msgid "Year: %s"
+msgstr "År: %s"
+
+#: archive.php:34
+msgid "Asides"
+msgstr ""
+
+#: archive.php:37
+msgid "Galleries"
+msgstr "Gallerier"
+
+#: archive.php:40
+msgid "Images"
+msgstr "Bilder"
+
+#: archive.php:43
+msgid "Videos"
+msgstr "Videoer"
+
+#: archive.php:46
+msgid "Quotes"
+msgstr "Sitater"
+
+#: archive.php:49
+msgid "Links"
+msgstr "Lenker"
+
+#: archive.php:52
+msgid "Statuses"
+msgstr "Statuser"
+
+#: archive.php:55
+msgid "Audios"
+msgstr "Lyd"
+
+#: archive.php:58
+msgid "Chats"
+msgstr "Samtaler"
+
+#: archive.php:61 sidebar.php:16
+msgid "Archives"
+msgstr "Arkiv"
+
+#: comments.php:35 comments.php:53
+msgid "Comment navigation"
+msgstr "Kommentarnavigasjon"
+
+#: comments.php:36 comments.php:54
+msgid "&larr; Older Comments"
+msgstr "← Eldre kommentarer"
+
+#: comments.php:37 comments.php:55
+msgid "Newer Comments &rarr;"
+msgstr "Nyere kommentarer →"
+
+#: comments.php:65
+msgid "Comments are closed."
+msgstr "Kommentarfeltet er stengt."
+
+#: content-footer.php:4
+msgid "Featured"
+msgstr "Framhevet"
+
+#. translators: used between list items, there is a space after the comma
+#: content-footer.php:10 content-footer.php:20
+msgid ", "
+msgstr ","
+
+#: content-footer.php:14
+msgid "Posted in<br>%1$s"
+msgstr "Publisert under<br>%1$s"
+
+#: content-footer.php:25
+msgid "Tagged<br>%1$s"
+msgstr "Merket<br>%1$s"
+
+#: content-footer.php:35
+msgid "Bookmark<br>the <a href=\"%1$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Bruk<br>the <a href=\"%1$s\" rel=\"bookmark\">permalenka</a>."
+
+#: content-footer.php:43
+msgid "Leave a comment"
+msgstr "Legg igjen en kommentar"
+
+#: content-footer.php:43
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: content-footer.php:43
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: content-footer.php:46 content-page.php:24
+msgid "Edit"
+msgstr "Rediger"
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Ingenting funnet"
+
+#: content-none.php:19
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Er du klar til å publisere ditt første innlegg? <a href=\"%1$s\">Begynn her</"
+"a>."
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Beklager, men ingenting passet med søkekriteriene. Vennligst prøv igjen med "
+"noen andre søkeord."
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Det ser ikke ut som om vi finner det du leiter etter. Kanskje det kan hjelpe "
+"å søke."
+
+#: content-page.php:18 content-single.php:35 content.php:29
+msgid "Pages:"
+msgstr "Sider:"
+
+#: content.php:26
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Fortsett å lese <span class=\"meta-nav\">→</span>"
+
+#: footer.php:15
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:15
+msgid "Proudly powered by %s"
+msgstr "Stolt drevet av %s"
+
+#: footer.php:17
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s av %2$s."
+
+#: functions.php:43 header.php:27
+msgid "Primary Menu"
+msgstr "Hovedmeny"
+
+#: functions.php:102
+msgid "Sidebar"
+msgstr "Sidekolonne"
+
+#: header.php:23
+msgid "Skip to content"
+msgstr "Hopp til innholdet"
+
+#: inc/extras.php:63
+msgid "Page %s"
+msgstr "Side %s"
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "Innleggsnavigasjon"
+
+#: inc/template-tags.php:25
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">←</span> Eldre innlegg"
+
+#: inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyere innlegg <span class=\"meta-nav\">→</span>"
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr "Innleggsnavigasjon"
+
+#: inc/template-tags.php:94
+msgid "Published"
+msgstr "Publisert"
+
+#: inc/template-tags.php:97
+msgid "Author"
+msgstr "Skribent"
+
+#: search.php:11
+msgid "Search Results for: %s"
+msgstr "Søkeresultater for: %s"
+
+#: sidebar.php:23
+msgid "Meta"
+msgstr "Meta"
+
+#. Theme Name of the plugin/theme
+msgid "Secret"
+msgstr "Hemmelighet"
+
+#. Theme URI of the plugin/theme
+msgid "http://hemmeligadresse.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Gridless, one-column theme with large post thumbnails and pulled alignments. "
+"Browse the source at <a href=\"https://github.com/Mienko/mek_secret/"
+"\">GitHub</a>. Secret is fully responsive, and shines both on small pocket-"
+"sized devices and large screen computers. On screen sizes that allow it, "
+"it's left and right aligned elements (like pictures or blockquotes) are "
+"pulled *off the chart* to make more out of the extra screen real estate "
+"without diverting attention to ads, related articles or </em>other stuff</"
+"em>. Being gridless means that instead of conforming to a strict horizontal "
+"grid, the pages are laid out to make your eyes rest while you read. As in a "
+"book, the text is not quite centered, but shifted slightly to one side. "
+"Combined with pulling aligned images, this makes for posts with great "
+"readability. Even though we jilted the horizontal grid, Secret does try to "
+"conform to a <em>vertical</em> grid, also to improve readability. Your "
+"readers shouldn't have to worry about these things. Secret does."
+msgstr ""
+"En-kolonnetema med store framhevede bilder og dratt flyt, uten rutenett. Bla "
+"gjennom kildekoden på <a href=\"https://github.com/Mienko/mek_secret/"
+"\">GitHub</a>. Hemmelighet er helt responsivt, og skinner både på små "
+"enheter som passer i lomma, og på store dataskjermer. På skjermstørrelser "
+"som tillater det, blir elementer som bilder og sitater dratt ut av "
+"hovedflyten for å få mer ut av den ekstra skjermplassen uten å dra "
+"oppmerksomhet mot reklame, relaterte artikler eller <em>andre greier</em>. Å "
+"være uten rutenett betyr at i stedet for å presse seg inn i formene av en "
+"strengt horisontalt rutenett, blir sidene bygget opp for å la øynene hvile "
+"mens du leser. Som i en bok blir ikke teksten helt sentrert, men dratt svakt "
+"mot en av sidene. Kombinert med dratte bilder, legger dette til rette for "
+"innlegg med nydelig lesbarhet. Selv om vi dreit i det horisontale "
+"rutenettet, prøver Hemmelighet å forholde seg til et <em>vertikalt</em> "
+"rutenett, dette også for å forbedre lesbarheten. Leserne dine skal ikke "
+"behøve å bekymre seg for disse tingene. Det gjør Hemmelighet."
+
+#. Author of the plugin/theme
+msgid "Mienko"
+msgstr "Mienko"
+
+#. Author URI of the plugin/theme
+msgid "http://mienko.no/"
+msgstr ""
+
+#: archive.php:28
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:31
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Én kommentar til &laquo;%2$s&raquo;"
+msgstr[1] "%1$s kommentarer til &laquo;%2$s&raquo;"
+
+#: inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">←</span> %title"
+
+#: inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">→</span>"
+
+#: inc/template-tags.php:82
+msgctxt "post date"
+msgid "Published %s"
+msgstr "Publisert %s"
+
+#: inc/template-tags.php:87
+msgctxt "post author"
+msgid "by %s"
+msgstr "av %s"
