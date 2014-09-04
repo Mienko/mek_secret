@@ -5,6 +5,7 @@
 	min-width:225px;
 	margin: $lineheight*3/2 $horizontalBase/2 $lineheight/2;
 	flex:1;
+	word-wrap:break-word;
 
 	h1 {
 		@extend h3;
