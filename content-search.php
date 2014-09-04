@@ -23,6 +23,6 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
-<?php get_template_part( 'content-footer' ); ?>
+<?php get_template_part( 'entryfooter' ); ?>
 
 </article><!-- #post-## -->

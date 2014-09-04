@@ -5,22 +5,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) {
-			$thumb_id = get_post_thumbnail_id();
-			$image    = wp_get_attachment_image_src( $thumb_id , 'large' );
-			$src      = $image[0];
-		?>
-		<div class="featured-image" style="background-image: url('<?php echo $src;?>');"></div>
-		<?php } ?>
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php mek_secret_posted_on( 'dl' ); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+<?php get_template_part( 'entryheader' , get_post_format() ); ?>
 
 	<div class="entry-content">
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'mek_secret' ) ); ?>
@@ -32,6 +18,6 @@
 		?>
 	</div><!-- .entry-content -->
 
-<?php get_template_part( 'content-footer' ); ?>
+<?php get_template_part( 'entryfooter' , get_post_format() ); ?>
 
 </article><!-- #post-## -->

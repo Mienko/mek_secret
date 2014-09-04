@@ -153,3 +153,20 @@ function mek_secret_category_transient_flusher() {
 }
 add_action( 'edit_category', 'mek_secret_category_transient_flusher' );
 add_action( 'save_post',     'mek_secret_category_transient_flusher' );
+
+/**
+ * Make titles into URLs, but not on single posts.
+ */
+function mek_secret_the_title() {
+	if ( is_single() ) {
+		the_title( '<h1 class="entry-title">', '</h1>' ); 
+	} else {
+		the_title(
+			sprintf(
+				'<h1 class="entry-title"><a href="%s" rel="bookmark">',
+				esc_url( get_permalink() )
+			),
+			'</a></h1>'
+		);
+	}
+}
