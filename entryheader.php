@@ -14,7 +14,7 @@
 	<header class="entry-header">
 <?php
 
-// Let's start with the (i) featured image!
+// Let's start with (i) the featured image!
 if ( has_post_thumbnail() ) {
 
 	if ( ! is_single() ) {
@@ -50,7 +50,7 @@ if ( has_post_thumbnail() ) {
 
 		} // end if there is a caption
 
-	} // end if is_single 
+	} // end if is_single 
 } // end if has post thumbnail
 
 // We're done witht the featured image,
