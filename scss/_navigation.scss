@@ -17,7 +17,8 @@ a:active {
 }
 
 // Lighter scheme for footer
-#secondary {
+#secondary,
+#colophon {
 	a {
 		color: $lightLinkColor;
 	}
