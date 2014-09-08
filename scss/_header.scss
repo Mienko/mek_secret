@@ -39,8 +39,7 @@
 			max-width:40%;
 		}
 		.site-title {
-			float:left;
-			clear:none;
+			display:inline
 		}
 		.site-description {
 			float:right;
@@ -55,7 +54,6 @@
 	}
 	&.unfocused {
 		min-height:$lineheight;
-
 
 		.site-title,
 		.site-description,
@@ -72,5 +70,12 @@
 			margin-top:0;
 		}
 	}
-}
+	&.height-restricted {
+		transition:all 0.3s;
+		max-height:2*$lineheight;
 
+		&.unfocused {
+			max-height:$lineheight;
+		}
+	}
+}

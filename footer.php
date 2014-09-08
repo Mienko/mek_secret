@@ -19,6 +19,14 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<nav id="site-navigation" class="main-navigation" role="navigation">
+	<header>
+	<a href="#" class="menu-toggle"><i class="close"></i></a>
+	</header>
+	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+</nav><!-- #site-navigation -->
+
+
 <?php wp_footer(); ?>
 
 </body>

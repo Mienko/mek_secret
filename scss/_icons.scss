@@ -108,3 +108,11 @@
 		@extend .icon-wordpress;
 	}
 }
+
+#site-navigation {
+	.close:before {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-times;
+	}
+}

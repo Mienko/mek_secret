@@ -52,4 +52,24 @@ jQuery( document ).ready(function( $ ) {
 			$('#masthead .site-description').css('display','block');
 		}
 	});
+
+	// Handle titles and descriptions that are long enough to break the layout
+	{
+		var header = $('#masthead');
+		var originalHeight = header.height();
+		header.css('max-height', originalHeight);
+
+		setTimeout( function(){
+		header.addClass('height-restricted').css('max-height','');
+		}, 2000);
+
+		header.mouseenter(function(){
+			header.css('max-height',originalHeight);
+		}).mouseleave(function(){
+			header.css('max-height','');
+		});
+	}
+
+	//	setTimeout( "restrictHeaderHeight();" , 2000 );
+	//setTimeout( "jQuery('#masthead').css('max-height', jQuery('#masthead .site-title').css('line-height'))" , 2000 );
 });
