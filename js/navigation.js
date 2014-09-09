@@ -32,7 +32,7 @@ jQuery( document ).ready(function( $ ) {
 		} else {
 			$(this).parent().addClass('toggled');
 		}
-		$(this).parent().find('> .sub-menu').toggle('slow');
+		$(this).parent().find('> .sub-menu').toggle();
 
 		// Don't toggle the parents...
 		event.stopPropagation();
