@@ -32,22 +32,22 @@ a:active {
 		color: $lightLinkHoverColor;
 	}
 
-		// Make for readable links in tables in widgets
-		tr:nth-child(2n+1) {
-			color:#333;
+	// Make for readable links in tables in widgets
+	tr:nth-child(2n+1) {
+		color:#333;
 
-			a {
-				color: $darkLinkColor;
-			}
-			a:visited {
-				color: $darkLinkVisitedColor;
-			}
-			a:hover,
-			a:focus,
-			a:active {
-				color: $darkLinkHoverColor;
-			}
+		a {
+			color: $darkLinkColor;
 		}
+		a:visited {
+			color: $darkLinkVisitedColor;
+		}
+		a:hover,
+		a:focus,
+		a:active {
+			color: $darkLinkHoverColor;
+		}
+	}
 }
 
 
@@ -62,7 +62,7 @@ a:active {
 	top:0;
 	left:-100%;
 	bottom:0;
-	width:300px;
+	width:500px;
 	padding:$lineheight 0;
 	overflow:auto;
 	transition:all 0.3s;
@@ -92,9 +92,9 @@ a:active {
 		transition:all 0.5s;
 
 		li {
-			position:relative;
 			border-bottom:1px solid white;
 			word-wrap:break-word;
+			position:relative;
 
 			a {
 				text-decoration: none;
@@ -103,21 +103,27 @@ a:active {
 			&:last-child {
 				border-bottom:0 none;
 			}
+
+			.sub-menu-toggler {
+				position:absolute;
+				left:-33px;
+				top:9px;
+				transition:all 0.3s;
+				cursor:pointer;
+
+			}
+
+			&.toggled {
+				> .sub-menu-toggler {
+					transform:rotate(90deg);
+				}
+			}
 		}
 
 		ul {
-			flex-direction:column;
-			background:#fff;
-
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: $lineheight;
-			left: -999em;
-			z-index: 99999;
-
 			list-style:none;
 			margin:0 0 0 16.66%;
+			transition:all 0.3s;
 
 			li {
 
@@ -133,22 +139,6 @@ a:active {
 					min-width:$horizontalBase*5;
 				}
 
-			}
-		}
-
-		li:hover > ul {
-			left:0;
-			right:0;
-			padding-left:$horizontalBase;
-			background:#eee;
-
-			ul {
-				top:100%;
-				background:#ccc;
-				
-				ul {
-					background:#aaa;
-				}
 			}
 		}
 	}

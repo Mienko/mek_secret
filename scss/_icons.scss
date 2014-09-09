@@ -115,4 +115,10 @@
 		@extend .icon-fw;
 		@extend .icon-times;
 	}
+
+	.sub-menu-toggler {
+		@extend .icon;
+		@extend .icon-fw;
+		@extend .icon-caret-right;
+	}
 }

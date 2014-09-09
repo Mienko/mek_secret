@@ -5,7 +5,7 @@
  */
 
 jQuery( document ).ready(function( $ ) {
-	$('#site-navigation > div > ul').addClass('nav-menu');
+	$('.main-navigation > div > ul').addClass('nav-menu');
 
 	// Hide menu toggle button if menu is empty.
 	if ( 0 == $('#site-navigation ul').length )
@@ -20,6 +20,22 @@ jQuery( document ).ready(function( $ ) {
 			$('#site-navigation').addClass('toggled');
 			$('.menu-toggle').addClass('toggled');
 		}
+	});
+
+	// Initially hide sub-menus
+	$('.main-navigation .sub-menu').hide();
+
+	// Add toggle buttons to parent items
+	$('.main-navigation .menu-item-has-children').prepend('<i class="sub-menu-toggler"></i>').find('> .sub-menu-toggler').click(function(event){
+		if ($(this).parent().hasClass('toggled')) {
+			$(this).parent().removeClass('toggled');
+		} else {
+			$(this).parent().addClass('toggled');
+		}
+		$(this).parent().find('> .sub-menu').toggle('slow');
+
+		// Don't toggle the parents...
+		event.stopPropagation();
 	});
 
 	// When we are scrolling, change the header
@@ -69,7 +85,4 @@ jQuery( document ).ready(function( $ ) {
 			header.css('max-height','');
 		});
 	}
-
-	//	setTimeout( "restrictHeaderHeight();" , 2000 );
-	//setTimeout( "jQuery('#masthead').css('max-height', jQuery('#masthead .site-title').css('line-height'))" , 2000 );
 });
