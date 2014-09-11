@@ -90,6 +90,20 @@
 		flex-grow:1;
 		text-align:center;
 	}
+
+	.posted-on .entry-date,
+	.byline .author {
+		display:block;
+		float:left;
+		clear:left;
+		width:100%;
+	}
+}
+
+.single.group-blog .entry-footer {
+	.byline .author {
+		display:block;
+	}
 }
 
 .site-main article {

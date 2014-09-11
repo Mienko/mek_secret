@@ -56,8 +56,9 @@ function mek_secret_setup() {
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
 	add_theme_support( 'post-formats', array(
-		'aside'
-		//, 'image', 'video', 'quote', 'link'
+		//'aside',
+		'image'
+		//, video', 'quote', 'link'
 	) );
 
 	// Setup the WordPress core custom background feature.

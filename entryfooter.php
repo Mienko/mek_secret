@@ -1,4 +1,4 @@
-	<footer class="entry-footer">
+	<footer class="entry-footer entry-meta">
 		<?php if ( is_sticky() ) : ?>
 			<div class="featured"><br>
 				<?php _e( 'Featured' , 'mek_secret' ); ?>
@@ -41,6 +41,10 @@
 
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 		<div class="comments-link <?php echo 1 < get_comments_number() ? 'plural-comments' : ''; ?>"><br><?php comments_popup_link( __( 'Leave a comment', 'mek_secret' ), __( '1 Comment', 'mek_secret' ), __( '% Comments', 'mek_secret' ) ); ?></div>
+		<?php endif; ?>
+
+		<?php if ( 'image' == get_post_format() ) : ?>
+			<?php get_template_part( 'headermeta' , get_post_format() ); ?>
 		<?php endif; ?>
 
 		<?php edit_post_link( __( 'Edit', 'mek_secret' ), '<span class="edit-link"><br>', '</span>' ); ?>
