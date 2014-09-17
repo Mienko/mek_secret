@@ -12,7 +12,7 @@ jQuery( document ).ready(function( $ ) {
 		$('.menu-toggle').hide();
 
 	// Toggle the navigation menu
-	$('.menu-toggle').click(function(){
+	$('.menu-toggle').click(function(e){
 		if ( $('#site-navigation').hasClass('toggled') ) {
 			$('#site-navigation').removeClass('toggled');
 			$('.menu-toggle').removeClass('toggled');
@@ -20,6 +20,7 @@ jQuery( document ).ready(function( $ ) {
 			$('#site-navigation').addClass('toggled');
 			$('.menu-toggle').addClass('toggled');
 		}
+		e.preventDefault();
 	});
 
 	// Initially hide sub-menus
