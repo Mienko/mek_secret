@@ -1,7 +1,6 @@
 jQuery( document ).ready( function( $ ){
 	$( document ).scroll( function(){
 		img=$( '.page-header.header-image' );
-		console.log( img.offset() );
 		if ( 'undefined' !== typeof img.offset() ) {
 			scroll = $(document).scrollTop();
 			bgHeight = $('.page-header.header-image').attr('data-background-height');
