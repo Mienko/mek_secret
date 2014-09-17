@@ -7,7 +7,7 @@
 .home, .blog, .archive {
 	.site-main article.has-post-thumbnail {
 		.entry-header {
-			$featuredImageTop: 550px;
+			$featuredImageTop: $lineheight*16;
 			padding-top: $featuredImageTop;
 
 			.featured-image {
@@ -15,7 +15,7 @@
 				position: absolute;
 				left: 0;
 				right: 0;
-				height: 700px;
+				height: $lineheight*21;
 				background: no-repeat center center;
 				background-size: cover;
 				z-index: 1;

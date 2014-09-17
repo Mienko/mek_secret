@@ -1,4 +1,11 @@
 <?php
+/**
+ * Displays a posts featured image.
+ *
+ *	Used at the top of each post. Do not confuse with the page-header templates.
+ *
+ * @package mek_secret
+ */
 
 // Let's start with (i) the featured image!
 if ( has_post_thumbnail() ) {

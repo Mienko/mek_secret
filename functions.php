@@ -161,3 +161,10 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Image sizes.
+ *
+ * Fun with featured images (post thumbnails), custom headers and other mischievous media.
+ */
+add_image_size( 'header' , '9999' , '816' , false );

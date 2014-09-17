@@ -9,16 +9,7 @@ get_template_part( 'header' ); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-	<?php
-	if ( has_post_thumbnail() ) {
-		$thumb_id   = get_post_thumbnail_id();
-		$image      = wp_get_attachment_image_src( $thumb_id , 'large' );
-		$src        = $image[0];
-		wp_enqueue_script( 'mek_secret-parallax' );
-	?>
-	<header class="page-header header-image" style="background-image: url('<?php echo $src; ?>');">
-	</header>
-	<?php } ?>
+	<?php get_template_part( 'page-header' , 'single' ); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

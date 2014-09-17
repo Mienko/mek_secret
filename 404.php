@@ -5,10 +5,10 @@
  * @package mek_secret
  */
 
-get_header(); ?>
+get_header();
 
-	<header class="page-header<?php if (get_header_image()) echo " header-image\" style=\"background-image: url('" . get_header_image() . "'); height:" . get_custom_header()->height . "px;" ?>">
-	</header><!-- .page-header -->
+get_template_part( 'page-header' );
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
