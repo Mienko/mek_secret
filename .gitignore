@@ -6,3 +6,4 @@ fonts/
 bower_components/
 node_modules/
 languages/mek_secret.pot
+build/
