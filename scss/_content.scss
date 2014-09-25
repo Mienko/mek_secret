@@ -62,6 +62,14 @@
 	a {
 		color:inherit;
 	}
+
+	.featured {
+		background:$darkOverlay;
+		color:$lightTextColor;
+		padding:$lineheight/2 0;
+		margin:-$lineheight/2 0 $lineheight/2;
+		border-radius:$borderRadius;
+	}
 }
 
 
