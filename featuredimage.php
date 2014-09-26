@@ -7,7 +7,7 @@
  * @package mek_secret
  */
 
-// Let's start with (i) the featured image!
+// Thumbnail or GTFO
 if ( has_post_thumbnail() ) {
 
 	if ( ! is_single() ) {
@@ -32,7 +32,7 @@ if ( has_post_thumbnail() ) {
 				if ( $attachment->post_excerpt ) {
 					echo ':';
 				}
-				echo( '</strong>' );
+				echo( '</strong> ' );
 			}
 
 			// Now the caption
