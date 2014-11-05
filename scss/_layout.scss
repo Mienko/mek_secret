@@ -21,7 +21,7 @@ body .content-area {
 }
 
 .content-area {
-	@extend .clear;
+	@extend %clearfix;
 	margin:$smallLayoutMargin;
 }
 
