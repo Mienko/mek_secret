@@ -8,4 +8,4 @@ Secret's source files are available at GitHub, look for [Mienko/mek_secret](//gi
 
 ## Roll your own
 
-    git clone git@github.com:Mienko/mek_secret.git && npm install && bower install && grunt
+    git clone git@github.com:Mienko/mek_secret.git && cd mek_secret && npm install && bower install && grunt
